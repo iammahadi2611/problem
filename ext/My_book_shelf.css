@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header{
+    height: 100px;
+    width: 100%;
+    background:rgba(0, 0, 0, 0.397);
+    display: flex;
+    justify-content: space-between;
+}
+#header img{
+    height: 120px;
+}
+#header h1{
+    padding: 20px;
+    font-size: 40px;
+    color: rgba(240, 248, 255, 0.747);
+}
+.container{
+    background: rgb(206, 206, 204);
+    width: 80%;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-top: 50px;
+    padding: 20px;
+}
+.container .itemParents{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 10px;
+    background: rgb(238, 237, 235);
+    border-radius: 5px;
+    align-items: center;
+    width: 100%;
+}
+.container .itemParents div{
+    justify-content: space-between;
+}
+.container .itemParents img{
+    width: 80px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 15px;
+}
+.container .itemParents h2{font-size: 25px; color: rgb(40, 47, 53);}
+.container .itemParents p{font-size: 15px; color: rgb(89, 91, 92);}
+.button{
+    width: 20px;
+    /* height: 20px; */
+    margin: 10px;
+    color: whitesmoke;
+    background: rgb(41, 41, 41);
+    border-radius: 5px;
+    border: 0;
+    transition: .3s;
+}
+/* .button:hover{
+    color: #000;
+    background: rgb(182, 181, 181);
+    border: 2px solid black;
+} */
+.nameDiv{
+    width: 350px;
+}
+.numDiv{
+    margin: 20px;
+    width: 150px;
+}
+.numDiv span{
+    background-color: rgb(65, 69, 73);
+    padding: 5px;
+    color: rgb(212, 205, 205);
+    border-radius: 5px;
+}
+.numNameDiv{
+    display: flex;
+}
+.numNameDiv div{margin: auto;}
+.priceDiv span{
+    padding: 5px;
+    margin-left: 15px;
+    background-color: rgba(167, 187, 204, 0.747);
+    border-radius: 5px;
+}
+@media(max-width: 991px){
+    .container .itemParents {
+        justify-content: center;
+    }
+}
+@media(max-width: 661px){
+    .container .itemParents div img{
+        width: 250px;
+    }
+    .container .itemParents .nameDiv{
+        text-align: center;
+    }
+}
+@media(max-width: 661px){
+    #header h1{
+        font-size: 30px;
+    }
+    #header img{
+        height: 90px
+    }
+}
