@@ -7,6 +7,11 @@ let numItemB = parseFloat(document.querySelector('.numItemB').innerText) ;
 let priceTagA = parseFloat(document.querySelector('.priceTagA').innerText);
 let priceTagB = parseFloat(document.querySelector('.priceTagB').innerText);
 
+let netBill = parseFloat(document.querySelector('.netBill').innerText);
+let taxOfBill = parseFloat(document.querySelector('.taxOfBill').innerText);
+let totalBill = parseFloat(document.querySelector('.totalBill').innerText);
+
+
 //Himu Series Book Javascript 
     plusBtnA.addEventListener('click', function(){
 
@@ -43,5 +48,6 @@ let priceTagB = parseFloat(document.querySelector('.priceTagB').innerText);
         
         console.log('numItemB',numItemB);
     })
-
-
+        document.querySelector('.netBill').innerText = priceTagA + priceTagB;
+        document.querySelector('.taxOfBill').innerText = (priceTagA + priceTagB) * 0.15 ;
+        document.querySelector('.totalBill').innerText = priceTagA + priceTagB +  (priceTagA + priceTagB) * 0.15 ;

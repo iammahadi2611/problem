@@ -99,11 +99,33 @@
         text-align: center;
     }
 }
-@media(max-width: 661px){
+@media(max-width: 481px){
     #header h1{
         font-size: 30px;
     }
     #header img{
-        height: 90px
+       height: 90px
     }
+    .container .itemParents div img{
+        width: 150px;
+}}
+
+/* Billing area */
+
+.total-container{
+    width: 50%;
+    background-color: rgb(219, 231, 231);
+    margin: 50px auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 10px solid rgb(202, 195, 182); 
+}
+.total-container .billChild{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px 15px;
+    margin: 5px;
+    background: rgb(241, 240, 238);
+    border-radius: 5px;
 }
